@@ -1,0 +1,24 @@
+[project]
+name = 'Decentralized-Aerospace-Aircraft-Maintenance-Networks'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.airline-verification]
+path = 'contracts/airline-verification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.maintenance-scheduling]
+path = 'contracts/maintenance-scheduling.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
